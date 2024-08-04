@@ -81,13 +81,13 @@ export const TodoList = ({ statuses }: TodoListProps) => {
 
   const { mutate: updateTodoStatus } = api.todoStatus.update.useMutation({
     onSuccess: () => {
-      refetch() // Refetch todos after updating status
+      refetch()
     },
   })
 
   const { mutate: deleteTodo } = api.todo.delete.useMutation({
     onSuccess: () => {
-      refetch() // Refetch todos after deleting
+      refetch()
     },
   })
 
